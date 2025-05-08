@@ -8,7 +8,7 @@ const faqData = [
   },
   {
     question: "What services do you offer?",
-    answer: "We offer full-cycle game development, UI/UX design, game animation, gamedevelopement experiences, and more."
+    answer: "We offer full-cycle game development, UI/UX design, game animation, game developement experiences, and more."
   },
   {
     question: "How can I contact you?",
