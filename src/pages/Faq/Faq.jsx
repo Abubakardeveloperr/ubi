@@ -30,7 +30,7 @@ const FAQ = () => {
   return (
     <div className="w-full py-16 bg-white font-['Roboto_Condensed']">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#ec2028] mb-10 uppercase">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#ec2028] mb-10 uppercase font-roboto">
           Frequently Asked Questions
         </h2>
 

@@ -12,19 +12,19 @@ const MissionVision = () => {
           {/* Mission */}
           <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
             <h3 className="text-xl sm:text-2xl font-semibold text-[#ec2028] mb-4 sm:mb-6">Our Mission</h3>
-            <p className="text-gray-800 leading-relaxed text-base sm:text-lg">
-              At <span className="font-semibold text-[#ec2028]">UBI Soft Pvt Ltd</span>, our mission is to craft immersive digital experiences that entertain, educate, and inspire users worldwide.
+            <p className="text-black-800 leading-relaxed text-base sm:text-lg">
+              At <span className="font-semibold text-[#ec2028] font-roboto">UBI Soft Pvt Ltd</span>, our mission is to craft immersive digital experiences that entertain, educate, and inspire users worldwide.
               We are committed to delivering innovative, high-quality games and applications that push the boundaries of creativity and technology. 
               Through collaboration, passion, and user-focused design, we strive to empower the next generation of creators and gamers alike.
             </p>
           </div>
 
           {/* Vision */}
-          <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
+          <div className="bg-white p-6 sm:p-8 font-roboto rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105">
             <h3 className="text-xl sm:text-2xl font-semibold text-[#ec2028] mb-4 sm:mb-6">Our Vision</h3>
-            <p className="text-gray-800 leading-relaxed text-base sm:text-lg">
+            <p className="text-black-800 leading-relaxed text-base sm:text-lg font-roboto">
               To become a global leader in interactive digital entertainment and software development, where creativity meets technology to shape the future of gaming and beyond. 
-              We envision a world where <span className="font-semibold text-[#ec2028]">UBI Soft Pvt Ltd</span> solutions are a symbol of quality, innovation, and social impact — fostering joy, connection, and opportunity for all.
+              We envision a world where <span className="font-semibold text-[#ec2028] font-roboto">UBI Soft Pvt Ltd</span> solutions are a symbol of quality, innovation, and social impact — fostering joy, connection, and opportunity for all.
             </p>
           </div>
         </div>

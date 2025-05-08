@@ -66,7 +66,7 @@ const ContactForm = () => {
 
             {/* Right Side */}
             <div className="bg-gray-50 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-              <h2 className="text-red-600 text-4xl font-semibold leading-10 mb-11">
+              <h2 className="text-red-600 text-4xl font-semibold leading-10 mb-11 font-roboto">
                 Send Us A Message
               </h2>
 
@@ -100,7 +100,7 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-red-600 shadow-sm"
+                className="w-full h-12 font-roboto text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 hover:bg-indigo-800 bg-red-600 shadow-sm"
               >
                 Send
               </button>

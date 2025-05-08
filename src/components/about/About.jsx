@@ -32,7 +32,7 @@ const About = () => {
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#ec2028] uppercase">
           About Us
         </h1>
-        <p className="mt-4 text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-4 text-black-80 font-roboto text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
           Passionately crafting immersive gaming experiences—powered by creativity, innovation, and expertise.
         </p>
       </motion.div>
@@ -46,11 +46,11 @@ const About = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-semibold text-[#ec2028] mb-4">
+          <h2 className="text-2xl sm:text-3xl font-semibold font-roboto text-[#ec2028] mb-4">
             Who We Are
           </h2>
-          <p className="text-red-600 text-base sm:text-lg leading-relaxed">
-            At <strong>UBI Soft Pvt Ltd</strong>, we are an in-house game development company dedicated to delivering unforgettable digital experiences. Our team of elite developers, designers, and artists collaborates under one roof—empowered by full creative control, cutting-edge technology, and a shared mission to define the future of gaming.
+          <p className="text-black-800 text-base sm:text-lg leading-relaxed">
+            At <strong className= "font-semibold font-roboto text-[#ec2028]">UBI Soft Pvt Ltd</strong>, we are an in-house game development company dedicated to delivering unforgettable digital experiences. Our team of elite developers, designers, and artists collaborates under one roof—empowered by full creative control, cutting-edge technology, and a shared mission to define the future of gaming.
             <br /><br />
             From concept to launch, every game we build reflects precision, innovation, and a deep respect for the player’s journey.
           </p>
@@ -65,7 +65,7 @@ const About = () => {
             <motion.h3 className="text-3xl sm:text-4xl font-bold text-[#ec2028]">
               {employeeCount}+
             </motion.h3>
-            <p className="text-gray-600 mt-2 text-base sm:text-lg font-semibold">Total Employees</p>
+            <p className="text-black-800 mt-2 text-base sm:text-lg font-semibold font-roboto">Total Employees</p>
           </motion.div>
         </motion.div>
 

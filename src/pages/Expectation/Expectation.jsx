@@ -14,10 +14,10 @@ const WhatWeExpect = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl sm:text-4xl font-bold text-[#ec2028] mb-6">
+          <h3 className="text-3xl sm:text-4xl font-bold text-[#ec2028] mb-6 font-roboto">
             What do We Expect?
           </h3>
-          <ul className="list-disc pl-5 text-base sm:text-lg text-gray-700 space-y-2">
+          <ul className="list-disc pl-5 text-base sm:text-lg text-black-800 space-y-2 font-roboto">
             <li>Skills</li>
             <li>Learning Attitude</li>
             <li>Team Work</li>

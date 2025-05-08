@@ -17,28 +17,28 @@ const Footer = () => {
               <img src={ubisoft} alt="UBI Soft Logo" className="w-44 mr-3" />
             
             </h6>
-            <p className="text-[#ec2028] text-justify">
+            <p className="text-black-800 text-justify font-roboto">
               At Ubi Soft Private Limited, we believe the future of entertainment lies in the hands of creators — and we’re here to shape it.
             </p>
           </div>
 
           {/* Useful Links */}
           <div>
-            <h6 className="uppercase font-semibold mb-4 text-[#ec2028]">Useful links</h6>
+            <h6 className="uppercase font-semibold mb-4 text-[#ec2028] font-roboto">Useful links</h6>
             <ul className="space-y-3">
               <li>
-                <Link to="/services" className="text-gray-600 hover:text-[#ec2028] transition duration-300">
+                <Link to="/services" className="text-black-800 hover:text-[#ec2028] font-roboto transition duration-300">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-600 hover:text-[#ec2028] transition duration-300">
+                <Link to="/about" className="text-black-800 hover:text-[#ec2028] font-roboto transition duration-300">
                   About us
                 </Link>
               </li>
              
               <li>
-                <Link to="/contact" className="text-gray-600 hover:text-[#ec2028] transition duration-300">
+                <Link to="/contact" className="text-black-800 font-roboto hover:text-[#ec2028] transition duration-300">
                   Contact Us
                 </Link>
               </li>
@@ -47,24 +47,24 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h6 className="uppercase font-semibold mb-4 text-[#ec2028]">Contact</h6>
+            <h6 className="uppercase font-semibold mb-4 text-[#ec2028] font-roboto">Contact</h6>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-center justify-center md:justify-start">
-                <MapPinIcon className="h-5 w-5 mr-3 text-[#ec2028]" />
+                <MapPinIcon className="h-5 w-5 mr-3 text-black-800 font-roboto" />
                 UBI Soft Pvt Ltd, Bahawalpur, Pakistan, 63100
               </li>
               <li className="flex items-center justify-center md:justify-start">
-                <EnvelopeIcon className="h-5 w-5 mr-3 text-[#ec2028]" />
+                <EnvelopeIcon className="h-5 w-5 mr-3 text-black-800 font-roboto" />
                 contact@gmail.com
               </li>
               <li className="flex items-center justify-center md:justify-start">
-                <PhoneIcon className="h-5 w-5 mr-3 text-[#ec2028]" />
+                <PhoneIcon className="h-5 w-5 mr-3 text-black-800 font-roboto" />
                 +923076633037
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2 text-[#ec2028]"
+                  className="h-5 w-5 mr-2 text-black-800"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -74,7 +74,7 @@ const Footer = () => {
                   href="https://www.facebook.com/logicpod?mibextid=ZbWKwL"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#ec2028] transition-colors duration-300"
+                  className="hover:text-[#ec2028] transition-colors duration-300 font-roboto"
                 >
                   Facebook
                 </a>
@@ -86,8 +86,8 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="text-center p-6 bg-gray-100">
-        <span>© 2025 Copyright: </span>
-        <Link className="text-[#ec2028] font-semibold hover:text-black" to="/">
+        <span className='text-black-800 font-roboto'>© 2025 Copyright: </span>
+        <Link className="text-[#ec2028] font-semibold hover:text-black font-roboto" to="/">
         UBI Soft Pvt Ltd
         </Link>
       </div>

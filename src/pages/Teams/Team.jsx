@@ -1,7 +1,7 @@
 import React from 'react';
 import ali from '../../assets/team/PICS3751.png';
 import sara from '../../assets/team/Untitled design (5).jpg';
-import usman from '../../assets/team/PICS3247.png';
+import usman from '../../assets/team/Untitled design (3).jpg';
 import haseb from '../../assets/team/Untitled design (4).png';
 
 const teamMembers = [
@@ -30,7 +30,7 @@ const OurTeam = () => {
                 alt={member.name}
               />
               <h3 className="text-xl sm:text-2xl font-semibold text-[#ec2028]">{member.name}</h3>
-              <p className="text-sm sm:text-base text-gray-500">{member.role}</p>
+              <p className="text-sm sm:text-base text-black-800">{member.role}</p>
             </div>
           ))}
         </div>

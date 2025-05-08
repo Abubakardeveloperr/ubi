@@ -92,7 +92,7 @@ const ServicesPage = () => {
             >
               <img src={service.image} alt={service.title} className="w-20 h-20 mx-auto mb-4" />
               <h3 className="text-xl font-['Roboto Condensed'] font-bold text-[#ec2028] mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.description}</p>
+              <p className="text-black-800 text-sm">{service.description}</p>
             </motion.div>
           ))}
         </div>

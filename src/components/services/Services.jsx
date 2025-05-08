@@ -57,7 +57,7 @@ const Services = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ec2028] mb-4">
               What we do
             </h2>
-            <p className="text-red-700 text-base sm:text-lg leading-relaxed">
+            <p className="text-black-800 text-base sm:text-lg leading-relaxed font-roboto">
               At UBI Soft Pvt Ltd, we offer a comprehensive range of services designed to meet the diverse needs of the gaming
               industry. From full-cycle game development to immersive VR/AR, game design, and monetization — we bring
               your vision to life with world-class quality.
@@ -65,7 +65,7 @@ const Services = () => {
             <div className="mt-6">
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 text-base sm:text-lg px-5 py-2 border border-gray-700 text-gray-800 hover:bg-gray-200 transition-all duration-300"
+                className="inline-flex items-center gap-2 text-base sm:text-lg px-5 py-2 border border-gray-700 text-black-800 hover:bg-gray-200 transition-all duration-300"
               >
                 Explore <BsArrowRight />
               </Link>
