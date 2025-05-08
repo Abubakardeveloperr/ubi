@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div
       ref={ref}
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
+      className="w-full max-w-[2560px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-20 py-12 sm:py-16"
     >
       {/* Heading */}
       <motion.div
@@ -26,13 +26,13 @@ const Services = () => {
       </motion.div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-10">
+      <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-10">
         {/* Image Column */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-2/3"
+          className="w-full lg:w-1/2"
         >
           <motion.img
             whileHover={{ scale: 1.05, x: 10 }}
@@ -48,7 +48,7 @@ const Services = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/3"
+          className="w-full lg:w-1/2"
         >
           <motion.div
             whileHover={{ x: -10 }}
@@ -57,8 +57,8 @@ const Services = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ec2028] mb-4">
               What we do
             </h2>
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-              At UBI Soft, we offer a comprehensive range of services designed to meet the diverse needs of the gaming
+            <p className="text-red-700 text-base sm:text-lg leading-relaxed">
+              At UBI Soft Pvt Ltd, we offer a comprehensive range of services designed to meet the diverse needs of the gaming
               industry. From full-cycle game development to immersive VR/AR, game design, and monetization — we bring
               your vision to life with world-class quality.
             </p>

@@ -22,7 +22,7 @@ const OurTeam = () => {
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="bg-white max-w-sm w-full mx-auto min-h-[360px] rounded-2xl shadow-md p-8 hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
+              className="bg-white max-w-xs w-full mx-auto min-h-[360px] rounded-2xl shadow-md p-6 hover:shadow-xl transition duration-300 flex flex-col items-center text-center"
             >
               <img
                 className="h-40 w-40 sm:h-48 sm:w-48 rounded-full object-cover border-4 border-[#ec2028] mb-6"

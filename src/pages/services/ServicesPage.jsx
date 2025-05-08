@@ -6,12 +6,12 @@ import unityImg from '../../assets/services/unity-icon.png';
 import gamificationImg from '../../assets/services/gamification-expericne.png';
 import qualityImg from '../../assets/services/quality-and-testing.png';
 import cover_img from '../../assets/services/work-6533616_640.webp';
-
+import blunder from '../../assets/services/Blender-Logo.png'
 const services = [
   {
     image: fullCycleImg,
     title: "Full Cycle Development",
-    description: "Games Tree is one of the leading game development companies offering end-to-end game development services."
+    description: "UBI Soft Pvt Ltd is one of the leading game development companies offering end-to-end game development services."
   },
   {
     image: animationImg,
@@ -30,13 +30,20 @@ const services = [
   },
   {
     image: gamificationImg,
-    title: "Gamification Experience",
-    description: "End-to-end creation of an application with an element of gamification from scratch: from analyzing the specifics of the business."
+      title: "Game Development Experience",
+      description: "Comprehensive game development from scratch — from analyzing business requirements to designing, building, and delivering interactive, engaging game applications."
+    
   },
   {
     image: qualityImg,
     title: "Quality & Testing",
     description: "Our quality assurance experts are here to test your finished game product inside and out before you present it to the general public."
+  },
+  {
+    image: blunder,
+    title: "Creative CG Artist & Modular 3D Designer",
+    description: "Our expert CG artists and modular 3D designers bring your game worlds to life with stylized or realistic assets, optimized for performance and visual impact."
+
   },
  
 ];
@@ -68,7 +75,7 @@ const ServicesPage = () => {
           className="text-center mb-16"
         >
           <h2 className="text-2xl md:text-4xl font-['Roboto Condensed'] font-bold text-[#ec2028] uppercase">What We Do</h2>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-red-800 mt-4 max-w-2xl mx-auto">
             Delivering immersive, high-quality gaming solutions tailored for your unique business goals.
           </p>
         </motion.div>

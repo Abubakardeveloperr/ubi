@@ -21,7 +21,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 font-['Roboto Condensed'] text-onSurface">
+    <div className="w-full max-w-[2560px] mx-auto px-4 sm:px-6 lg:px-8 py-20 font-['Roboto Condensed'] text-onSurface">
       {/* Heading */}
       <motion.div
         className="text-center mb-12"
@@ -49,8 +49,8 @@ const About = () => {
           <h2 className="text-2xl sm:text-3xl font-semibold text-[#ec2028] mb-4">
             Who We Are
           </h2>
-          <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-            At <strong>UBI Soft</strong>, we are an in-house game development company dedicated to delivering unforgettable digital experiences. Our team of elite developers, designers, and artists collaborates under one roof—empowered by full creative control, cutting-edge technology, and a shared mission to define the future of gaming.
+          <p className="text-red-600 text-base sm:text-lg leading-relaxed">
+            At <strong>UBI Soft Pvt Ltd</strong>, we are an in-house game development company dedicated to delivering unforgettable digital experiences. Our team of elite developers, designers, and artists collaborates under one roof—empowered by full creative control, cutting-edge technology, and a shared mission to define the future of gaming.
             <br /><br />
             From concept to launch, every game we build reflects precision, innovation, and a deep respect for the player’s journey.
           </p>
@@ -76,7 +76,7 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="w-full rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="w-full max-w-[800px] rounded-lg overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
             <img
               src={ubi}
               alt="Team Working"

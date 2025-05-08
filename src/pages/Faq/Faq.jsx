@@ -3,12 +3,12 @@ import { ChevronDown } from 'lucide-react';
 
 const faqData = [
   {
-    question: "What is UBI Soft Pvtltd?",
-    answer: "UBI Soft Pvtltd is a game development company dedicated to creating immersive and high-quality gaming experiences."
+    question: "What is UBI Soft Pvt Ltd?",
+    answer: "UBI Soft Pvt Ltd is a game development company dedicated to creating immersive and high-quality gaming experiences."
   },
   {
     question: "What services do you offer?",
-    answer: "We offer full-cycle game development, UI/UX design, game animation, gamification experiences, and more."
+    answer: "We offer full-cycle game development, UI/UX design, game animation, gamedevelopement experiences, and more."
   },
   {
     question: "How can I contact you?",
@@ -16,7 +16,7 @@ const faqData = [
   },
   {
     question: "What platforms do you develop games for?",
-    answer: "We develop games for Android, iOS, and PC platforms, with experience in Unity and other engines."
+    answer: "We develop games for Android and iOS with experience in Unity and other engines."
   },
 ];
 

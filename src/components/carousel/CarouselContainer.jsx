@@ -28,7 +28,7 @@ const CarouselContainer = () => {
       showDots={true}
       infinite={true}
       autoPlay={true}
-      autoPlaySpeed={5000} // Slower: 5 seconds
+      autoPlaySpeed={3000} // Slower: 5 seconds
       transitionDuration={1000} // 1 second fade
       responsive={responsiveImageHero}
       slidesToSlide={1}
