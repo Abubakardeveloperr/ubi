@@ -1,5 +1,7 @@
+import { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+
 import img2 from '../../assets/carousel/dance.jpg';
 import img3 from '../../assets/carousel/Untitled design.jpg';
 import img4 from '../../assets/carousel/corver33.jpg';
@@ -23,20 +25,31 @@ const responsiveImageHero = {
 const images = [img2, img3, img4, img5];
 
 const CarouselContainer = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const updateIsMobile = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+    updateIsMobile();
+    window.addEventListener('resize', updateIsMobile);
+    return () => window.removeEventListener('resize', updateIsMobile);
+  }, []);
+
   return (
     <Carousel
       showDots={true}
       infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={3000} // Slower: 5 seconds
-      transitionDuration={1000} // 1 second fade
+      autoPlay={!isMobile}
+      autoPlaySpeed={3000}
+      transitionDuration={1000}
       responsive={responsiveImageHero}
       slidesToSlide={1}
       containerClass="carouselContainer"
       removeArrowOnDeviceType={['tablet', 'mobile']}
-      draggable={false}
+      draggable={!isMobile}
       swipeable={true}
-      pauseOnHover={false}
+      pauseOnHover={!isMobile}
     >
       {images.map((image, id) => (
         <img

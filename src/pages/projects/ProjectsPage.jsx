@@ -19,6 +19,8 @@ import game12 from '../../assets/Abdullah Zahoor/SS06 (2).webp';
 import game13 from '../../assets/Abdullah Zahoor/SS_.02.webp';
 import game14 from '../../assets/Abdullah Zahoor/Mini Car  ss 1.webp';
 import game15 from '../../assets/Abdullah Zahoor/Police ss 4.webp';
+import CarouselContainer from '../../components/carousel/CarouselContainer';
+import Services from '../../components/services/Services';
 
 const gameImages = [
   { id: 13, src: game13, alt: 'Car Racing' },
@@ -40,6 +42,7 @@ const gameImages = [
 
 const GameGallery = () => {
   return (
+    <>
     <section className="w-full py-20 bg-white font-roboto">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-5xl font-extrabold text-center text-[#ec2028] mb-12">
@@ -71,6 +74,9 @@ const GameGallery = () => {
         </div>
       </div>
     </section>
+   
+               
+    </>
   );
 };
 

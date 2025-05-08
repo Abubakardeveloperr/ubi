@@ -1,63 +1,69 @@
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import ubi from '../../assets/carousel/cover 1.jpg';
 
 const Services = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, threshold: 0.3 });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkScreen();
+    window.addEventListener('resize', checkScreen);
+    return () => window.removeEventListener('resize', checkScreen);
+  }, []);
+
+  // Dynamically use motion or div/img
+  const MotionOrDiv = isMobile ? 'div' : motion.div;
+  const MotionOrImg = isMobile ? 'img' : motion.img;
+
   return (
     <div
       ref={ref}
-      className="w-full max-w-[2560px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-20 py-12 sm:py-16"
+      className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-20 py-10 sm:py-14 md:py-16"
     >
       {/* Heading */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.8 }}
+      <MotionOrDiv
+        {...(!isMobile && {
+          initial: { opacity: 0, y: 30 },
+          animate: inView ? { opacity: 1, y: 0 } : {},
+          transition: { duration: 0.8 },
+        })}
         className="text-center mb-10"
       >
         <h1 className="text-[#ec2028] text-2xl sm:text-3xl md:text-4xl font-bold uppercase">
           Services
         </h1>
-      </motion.div>
+      </MotionOrDiv>
 
-      {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-10">
-        {/* Image Column */}
-        <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2"
-        >
-          <motion.img
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: 'spring', stiffness: 200, damping: 15 }}
-            src={ubi}
-            alt="Service"
-            className="rounded-xl w-full h-auto max-h-[500px] object-cover shadow-md"
-          />
-        </motion.div>
-
+      {/* Main Content */}
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-12">
+        
         {/* Text Column */}
-        <motion.div
-          initial={{ opacity: 0, x: 80 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.8 }}
+        <MotionOrDiv
+          {...(!isMobile && {
+            initial: { opacity: 0, x: 80 },
+            animate: inView ? { opacity: 1, x: 0 } : {},
+            transition: { duration: 0.8 },
+          })}
           className="w-full lg:w-1/2"
         >
-          <motion.div
-            whileHover={{ x: -10 }}
-            transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+          <MotionOrDiv
+            {...(!isMobile && {
+              whileHover: { x: -10 },
+              transition: { type: 'spring', stiffness: 200, damping: 15 },
+            })}
           >
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#ec2028] mb-4">
               What we do
             </h2>
-            <p className="text-black-800 text-base sm:text-lg leading-relaxed font-roboto">
+            <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-roboto">
               At UBI Soft Pvt Ltd, we offer a comprehensive range of services designed to meet the diverse needs of the gaming
               industry. From full-cycle game development to immersive VR/AR, game design, and monetization — we bring
               your vision to life with world-class quality.
@@ -65,13 +71,33 @@ const Services = () => {
             <div className="mt-6">
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 text-base sm:text-lg px-5 py-2 border border-gray-700 text-black-800 hover:bg-gray-200 transition-all duration-300"
+                className="inline-flex items-center gap-2 text-sm sm:text-base px-4 py-2 border border-gray-700 text-black hover:bg-gray-200 rounded transition-all duration-300"
               >
                 Explore <BsArrowRight />
               </Link>
             </div>
-          </motion.div>
-        </motion.div>
+          </MotionOrDiv>
+        </MotionOrDiv>
+
+        {/* Image Column */}
+        <MotionOrDiv
+          {...(!isMobile && {
+            initial: { opacity: 0, x: -80 },
+            animate: inView ? { opacity: 1, x: 0 } : {},
+            transition: { duration: 0.8 },
+          })}
+          className="w-full lg:w-1/2"
+        >
+          <MotionOrImg
+            {...(!isMobile && {
+              whileHover: { scale: 1.05, x: 10 },
+              transition: { type: 'spring', stiffness: 200, damping: 15 },
+            })}
+            src={ubi}
+            alt="Service"
+            className="rounded-xl w-full h-auto max-h-[500px] object-cover shadow-md"
+          />
+        </MotionOrDiv>
       </div>
     </div>
   );
