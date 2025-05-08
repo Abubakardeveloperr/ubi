@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className=" bg-gray-100 fixed top-0 left-0 w-full z-50 shadow-lg">
+    <Disclosure as="nav" className="bg-gray-100 fixed top-0 left-0 w-full z-50 shadow-lg">
       {({ open, close }) => (
         <>
           {/* Top bar */}
@@ -53,11 +53,11 @@ export default function Navbar() {
 
               {/* Hamburger menu for mobile */}
               <div className="sm:hidden flex items-center">
-                <Disclosure.Button className="p-2 rounded-md text-white hover:bg-[#8a4849] focus:outline-none focus:ring-2 focus:ring-[#ff4d4f] transition-transform duration-300">
+                <Disclosure.Button className="p-2 rounded-md text-white border-2 border-red-500 hover:bg-[#8a4849] focus:outline-none focus:ring-2 focus:ring-[#ff4d4f] transition-transform duration-300">
                   {open ? (
-                    <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6 rotate-180 transition-transform duration-300" />
+                    <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6 rotate-180 transition-transform duration-300 text-black" />
                   ) : (
-                    <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300" />
+                    <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6 transition-transform duration-300 text-black" />
                   )}
                 </Disclosure.Button>
               </div>
