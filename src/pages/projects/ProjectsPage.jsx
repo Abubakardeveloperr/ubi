@@ -15,7 +15,7 @@ import game8 from '../../assets/Abdullah Zahoor/mud jeep 1.webp';
 import game9 from '../../assets/Abdullah Zahoor/SS05 (2).webp';
 import game10 from '../../assets/Abdullah Zahoor/Gangster  ss 2 ui.webp';
 import game11 from '../../assets/Abdullah Zahoor/Rickshaw ss 1.webp';
-import game12 from '../../assets/Abdullah Zahoor/SS06 (2).webp';
+import game12 from '../../assets/Abdullah Zahoor/ss05.webp';
 import game13 from '../../assets/Abdullah Zahoor/SS_.02.webp';
 import game14 from '../../assets/Abdullah Zahoor/Mini Car  ss 1.webp';
 import game15 from '../../assets/Abdullah Zahoor/Police ss 4.webp';
