@@ -64,7 +64,7 @@ const Services = () => {
               What we do
             </h2>
             <p className="text-gray-800 text-base sm:text-lg leading-relaxed font-roboto">
-              At UBI Soft Pvt Ltd, we offer a comprehensive range of services designed to meet the diverse needs of the gaming
+              At <strong className='text-red-800'>UBI Soft Pvt Ltd,</strong>  we offer a comprehensive range of services designed to meet the diverse needs of the gaming
               industry. From full-cycle game development to immersive VR/AR, game design, and monetization — we bring
               your vision to life with world-class quality.
             </p>

@@ -1,7 +1,7 @@
 import React from 'react';
-import ali from '../../assets/team/PICS3751.png';
+import ali from '../../assets/team/sir.png';
 import sara from '../../assets/team/Untitled design (5).jpg';
-import usman from '../../assets/team/Untitled design (3).jpg';
+import usman from '../../assets/team/jaam sahab.png';
 import haseb from '../../assets/team/Untitled design (4).png';
 
 const teamMembers = [
