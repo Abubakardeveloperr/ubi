@@ -12,7 +12,7 @@ const faqData = [
   },
   {
     question: "How can I contact you?",
-    answer: "You can contact us through the contact form on our website or reach out via email at contact@ubisoft.com."
+    answer: "You can contact us through the contact form on our website or reach out via email at contact@ubisoftpvtltd.com"
   },
   {
     question: "What platforms do you develop games for?",

@@ -50,7 +50,7 @@ const ContactForm = () => {
                       </a>
                       <a href="mailto:your@email.com" className="flex items-center mb-6">
                         📧
-                        <h5 className="text-black text-base font-normal leading-6 ml-5">ubicontact@email.com</h5>
+                        <h5 className="text-black text-base font-normal leading-6 ml-5">contact@ubisoftpvtltd.com</h5>
                       </a>
                       <a href="#" className="flex items-center">
                         📍

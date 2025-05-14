@@ -55,7 +55,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <EnvelopeIcon className="h-5 w-5 mr-3 text-black-800 font-roboto" />
-                contact@gmail.com
+                contact@ubisoftpvtltd.com
               </li>
               <li className="flex items-center justify-center md:justify-start">
                 <PhoneIcon className="h-5 w-5 mr-3 text-black-800 font-roboto" />
