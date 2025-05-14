@@ -9,10 +9,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        'ubisoft123',      // ✅ Replace with your actual service ID
-        'template_9u0sifr',     // ✅ Replace with your actual template ID
+        'service_123',      // ✅ Replace with your actual service ID
+        'template_do2c5ud',     // ✅ Replace with your actual template ID
         e.target,
-        'FkHIqvUFhSSwWl0jG'     // ✅ Replace with your public key
+        '6PxTTnbfZfzUZhuLT'     // ✅ Replace with your public key
       )
       .then(() => {
         setShowPopup(true);
